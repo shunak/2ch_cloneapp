@@ -24,6 +24,7 @@
           </div>
           <% end %>
       </div>
+      <!--子コメント全件表示用ここまで-->
       <hr>
       <%= form_for @comment, url: board_comments_path(@board, @comment) do |f| %>
       名前: <%= f.text_field :name %><br>
