@@ -8,7 +8,7 @@
     <%= link_to "タイトルを編集する", edit_board_path(@board) %>
     <%= link_to "削除する", board_path(@board), method: :delete, data:{ confirm: "本当に削除しますか？" } %>
       <hr>
-      <!-- 子供のコメント全件表示用 -->
+      <!-- 子コメント全件表示用 -->
       <div class="comments">
         <% @board.comments.each_with_index do |comment, index| %>
         <div class="comment">
